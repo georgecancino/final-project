@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Categories</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "categories.css" %>
+</head>
+<body>
+  <h1>CATEGORIES</h1>
+  <ul id="category-list">
+    <li><%= link_to 'FACE', products_path(category: 'Face'), class: 'category-link' %></li>
+    <li><%= link_to 'EYES', products_path(category: 'Eyes'), class: 'category-link' %></li>
+    <li><%= link_to 'LIPS', products_path(category: 'Lips'), class: 'category-link' %></li>
+    <li><%= link_to 'Show All', products_path(category: 'Show All'), class: 'category-link' %></li>
+  </ul>
+</body>
+</html>

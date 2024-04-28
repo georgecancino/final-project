@@ -1,0 +1,31 @@
+body {
+  background-image: url('makeup.png');
+  background-size: cover;
+}
+h1 {
+    font-size: 50px;
+    color: black;
+    font-family: "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding-top: 250px;
+}
+
+ul#category-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  ul#category-list li {
+    margin-right: 20px;
+}
+  
+  .category-link {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+  
+  

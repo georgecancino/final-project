@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'products.css' %>
+  <%= javascript_include_tag 'products.js' %>
+</head>
+<body>
+<p>Sort By: Click on NAME or PRICE (Refresh page if needed)</p>
+  <table>
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>PRICE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= number_to_currency(product.price) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div>
+  <%= link_to 'Home', root_path%>
+  </div>
+</body>
+</html>
